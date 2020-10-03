@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap" rel="stylesheet">
+	<style>
+
+		body{background: black;}
+
+		.bigdiv{ width: 1200px; height: 800px; margin: auto; 
+				display: flex; 
+				align-items: center; 
+				justify-content: space-between;
+	  		}
+
+		.mini{  font-size: 150px; font-family: 'Sansita Swashed', cursive;
+			    font-weight: 700; 
+			    color: #fcedd8;
+		        text-shadow: 5px 5px 0px #eb452b, 
+		                  10px 10px 0px #efa032, 
+		                  15px 15px 0px #46b59b,                 
+		                  20px 20px 0px #c11a2b;
+		        transition-property: all;        
+		        transition-duration: 1s;
+		        transform: scale(2, 2); 
+		        animation: le;
+		       	animation-duration: 2s;
+		        animation-iteration-count: infinite;
+		        animation-timing-function: ease-in-out;
+		        animation-play-state: paused;
+		        animation-fill-mode: forwards; 
+		              }
+
+
+              @keyframes le {
+			  0% {margin-top: 0px; -webkit-filter: hue-rotate(0deg);}
+			  50% {margin-top: -300px;}
+			  100% {margin-top: 0px;  -webkit-filter: hue-rotate(360deg);}
+			}
+
+		.mini:hover {
+				transform: skewX(15deg); scale(1, 1);
+				animation-play-state: running;
+				
+			}
+
+		.mini2{  font-size: 150px; font-family: 'Sansita Swashed', cursive;
+			    font-weight: 700; 
+			    color: #fcedd8;
+		        text-shadow: 5px 5px 0px #eb452b, 
+		                  10px 10px 0px #efa032, 
+		                  15px 15px 0px #46b59b,                 
+		                  20px 20px 0px #c11a2b;
+		        transition-property: all;        
+		        transition-duration: 1s;
+		        transform: scale(2, 2); 
+		        animation: lee;
+		       	animation-duration: 2s;
+		        animation-iteration-count: infinite;
+		        animation-timing-function: ease-in-out;
+		        animation-play-state: paused;
+		        animation-fill-mode: forwards; 
+		              }
+
+
+              @keyframes lee {
+			  0% {margin-top: -100px; -webkit-filter: hue-rotate(0deg);}
+			  50% {margin-top: 300px;}
+			  100% {margin-top: -100px;  -webkit-filter: hue-rotate(360deg);}
+			}
+
+		.mini2:hover {
+				transform: skewX(15deg); scale(1, 1);
+				animation-play-state: running;
+				
+			}
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="bigdiv">
+		<div class="mini">T</div>
+		<div class="mini2">A</div>
+		<div class="mini">E</div>
+		<div class="mini2">T</div>
+		<div class="mini">A</div>
+		<div class="mini2">E</div>
+	</div>
+
+</body>
+</html>
